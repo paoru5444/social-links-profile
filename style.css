@@ -52,9 +52,9 @@ main {
   gap: 1.5em;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 37.5em) {
   .card {
-    width: 24em;
+    min-width: 24em;
   }
 }
 
@@ -119,4 +119,14 @@ main {
 .action-container button:focus {
   border: var(--color-grey-800) solid 1px;
   transform: scale(0.99);
+}
+
+@medis (prefers-reduced-motion: reduce) {
+  .action-container button {
+    transition: none;
+  }
+
+  .action-container button:focus {
+    transform: none;
+  }
 }

@@ -56,7 +56,6 @@ main {
     width: 24em;
     padding: 2.5em;
   }
-  
 }
 
 @media screen and (max-width: 600px) {
